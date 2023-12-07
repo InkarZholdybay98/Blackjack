@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5e0000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.gameBoard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 130px;
+  width: 60%;
+  background-color: #007300;
+  height: 80dvh;
+  margin: 15px;
+  border: 10px solid black;
+  padding: 20px;
+}
+.myCards div {
+  background-color: #f3f1e5;
+  box-shadow: 0 0 7px #9a9790;
+  font-size: 1.5em;
+  padding-left: 2px;
+}
+
+.computerCards div {
+  background-color: #f3f1e5;
+  box-shadow: 0 0 7px #9a9790;
+  font-size: 1.5em;
+  padding-left: 2px;
+}
+
+.computerCards,
+.myCards {
+  width: 100%;
+  height: 80dvh;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.getCard,
+.playAgain {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #6d0305;
+  font-size: 1.5rem;
+  color: #f3f1e5;
+}
+
+.getCard:hover,
+.getCard:active {
+  background-color: #340609;
+  color: #f3f1e5;
+}
+
+.computerCards,
+.myCards {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: #245400;
+  border: 5px solid #5e8a3a;
+}
+
+.hidden {
+  display: none;
+}
+
+.computersPoint,
+.myPoints {
+  color: #f7ac09;
+}
